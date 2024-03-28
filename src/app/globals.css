@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  background-image: linear-gradient(120deg, #C3D3FF 0%, #DEE7FF 100%);
+  background-color: theme('colors.mainBlue');
 }
 
 /*========== Font ==========*/
@@ -44,14 +44,14 @@ p {
   }
 
   h3 {
-    font-size: 2rem;
+    font-size: 1.75rem;
     line-height: 2rem;
     font-weight: 100;
   }
 
   p {
     font-size: 1.125rem;
-    line-height: 2.5rem;
+    line-height: 2.2rem;
     font-weight: 300;
   }
 }
@@ -62,11 +62,21 @@ main {
   padding: 0 2rem;
 }
 
+section {
+  padding: 4rem 0 2rem;
+}
+
 button {
   background-color: theme('colors.darkBlue');
   padding: 1rem 2rem;
   border-radius: 2rem;
   color: theme('colors.lightBlue');
+  transition: .4s;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: .9;
 }
 
 @media screen and (min-width: 968px) {
