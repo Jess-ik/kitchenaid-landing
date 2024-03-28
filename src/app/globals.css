@@ -28,26 +28,29 @@ h3 {
   color: theme('colors.darkBlue');
 }
 
-p{
+p {
   line-height: 2rem;
   color: theme('colors.dark600');
 }
 
 @media screen and (min-width: 968px) {
-h1{
-  font-size: 6rem;
-}
-  h2{
+  h1 {
+    font-size: 6rem;
+  }
+
+  h2 {
     font-size: 3rem;
     line-height: 3rem;
   }
-  h3{
+
+  h3 {
     font-size: 2rem;
     line-height: 2rem;
     font-weight: 100;
   }
-  p{
-    font-size: 1.125rem ;
+
+  p {
+    font-size: 1.125rem;
     line-height: 2.5rem;
     font-weight: 300;
   }
@@ -55,11 +58,11 @@ h1{
 
 /*========== Elements ==========*/
 
-main{
+main {
   padding: 0 2rem;
 }
 
-button{
+button {
   background-color: theme('colors.darkBlue');
   padding: 1rem 2rem;
   border-radius: 2rem;
@@ -67,8 +70,87 @@ button{
 }
 
 @media screen and (min-width: 968px) {
-  main{
+  main {
     max-width: 968px;
     margin: 0 auto;
   }
 }
+
+/*========== HEADER ==========*/
+
+header {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: fixed;
+}
+
+nav {
+  position: fixed;
+  background-color: theme('colors.mainBlue');
+  top: -100%;
+  left: 0;
+  width: 100%;
+  padding: 6rem 0 4rem;
+  transition: top .4s;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+nav li {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.menu-toggle,
+.logo {
+  cursor: pointer;
+  z-index: 1000;
+}
+
+@media screen and (min-width: 968px) {
+  header {
+    background-color: theme('colors.mainBlue');
+    padding: 1rem 8rem;
+  }
+
+  nav {
+    top: 0;
+    padding: 0;
+    position: relative;
+    width: fit-content;
+    background-color: transparent;
+  }
+
+  nav ul {
+    flex-direction: row;
+    gap: 3rem;
+  }
+
+  nav li {
+    font-size: 1rem;
+    text-transform: capitalize;
+    font-weight: 400;
+    cursor: pointer;
+    transition: .2s;
+  }
+
+  nav li:hover {
+    color: theme('colors.light');
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+}
+
+/*========== LANDING ==========*/

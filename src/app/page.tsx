@@ -1,8 +1,12 @@
 import Image from "next/image";
+import Header from "./components/Header";
 
 export default function Home() {
   return (
+    <>
+      <Header />
     <main className="h-screen">
+      
       <h1 >Blue Salt</h1>
       <h2 >Couleur KitchenAid 2024</h2>
       <h3 >Découvrez notre fabuleux robot pâtissier</h3>
@@ -13,6 +17,6 @@ export default function Home() {
       </p>
       <button>Add to bag</button>
       <h2 >Caractéristiques</h2>
-    </main>
+    </main></>
   );
 }
