@@ -2,32 +2,73 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+body {
+  background-image: linear-gradient(120deg, #C3D3FF 0%, #DEE7FF 100%);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+/*========== Font ==========*/
+
+h1 {
+  font-family: var(--font-licorice);
+  font-size: 5rem;
+}
+
+h2 {
+  font-family: var(--font-dmmsans);
+  font-weight: 600;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  color: theme('colors.darkBlue');
+}
+
+h3 {
+  font-family: var(--font-dmserif);
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  color: theme('colors.darkBlue');
+}
+
+p{
+  line-height: 2rem;
+  color: theme('colors.dark600');
+}
+
+@media screen and (min-width: 968px) {
+h1{
+  font-size: 6rem;
+}
+  h2{
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+  h3{
+    font-size: 2rem;
+    line-height: 2rem;
+    font-weight: 100;
+  }
+  p{
+    font-size: 1.125rem ;
+    line-height: 2.5rem;
+    font-weight: 300;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+/*========== Elements ==========*/
+
+main{
+  padding: 0 2rem;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+button{
+  background-color: theme('colors.darkBlue');
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  color: theme('colors.lightBlue');
+}
+
+@media screen and (min-width: 968px) {
+  main{
+    max-width: 968px;
+    margin: 0 auto;
   }
 }
