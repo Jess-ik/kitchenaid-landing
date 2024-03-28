@@ -18,7 +18,7 @@ h2 {
   font-weight: 600;
   font-size: 2.5rem;
   line-height: 2.5rem;
-  color: theme('colors.darkBlue');
+  color: theme('colors.dark');
 }
 
 h3 {
@@ -67,7 +67,7 @@ section {
 }
 
 button {
-  background-color: theme('colors.darkBlue');
+  background-color: theme('colors.dark');
   padding: 1rem 2rem;
   border-radius: 2rem;
   color: theme('colors.lightBlue');
@@ -76,7 +76,7 @@ button {
 }
 
 button:hover {
-  opacity: .9;
+  background-color: theme('colors.darkBlue');
 }
 
 @media screen and (min-width: 968px) {
@@ -163,4 +163,58 @@ nav li {
   }
 }
 
-/*========== LANDING ==========*/
+/*========== SPECS ==========*/
+
+.spec-icon {
+  color: theme('colors.light');
+  font-size: 1.25rem;
+  margin-bottom: .6rem;
+}
+
+.spec-title {
+  color: theme('colors.darkBlue');
+  font-weight: 600;
+}
+
+.spec-desc {
+  color: theme('colors.dark600');
+  font-size: .9rem;
+}
+
+ul.specs>li {
+  margin-bottom: 2rem;
+}
+
+ul.specs>li:nth-child(1),
+ul.specs>li:nth-child(4) {
+  margin-left: 2rem;
+}
+
+.specs-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: -100px;
+  
+}
+
+
+
+@media screen and (min-width: 968px) {
+  .specs-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 850px;
+    right: 0;
+    top: -1rem;
+  }
+  .specs-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+  }
+}

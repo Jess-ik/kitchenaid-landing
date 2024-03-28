@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Header from "./components/Header";
 import Landing from "./components/Landing";
+import Specs from "./components/Specs";
 
 export default function Home() {
   return (
@@ -8,8 +9,8 @@ export default function Home() {
       <Header />
     <main className="h-screen">
     <Landing />
-     
-      <h2 >Caractéristiques</h2>
+    <Specs />
+      
     </main></>
   );
 }
