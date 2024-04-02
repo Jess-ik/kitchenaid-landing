@@ -14,9 +14,9 @@ h1 {
 }
 
 h2 {
-  font-family: var(--font-dmmsans);
-  font-weight: 600;
-  font-size: 2.5rem;
+  font-family: var(--font-licorice);
+
+  font-size: 4rem;
   line-height: 2.5rem;
   color: theme('colors.dark');
 }
@@ -24,6 +24,13 @@ h2 {
 h3 {
   font-family: var(--font-dmserif);
   font-size: 1.5rem;
+  line-height: 1.75rem;
+  color: theme('colors.darkBlue');
+}
+
+h4 {
+  font-family: var(--font-dmserif);
+  font-size: 1.25rem;
   line-height: 1.75rem;
   color: theme('colors.darkBlue');
 }
@@ -39,12 +46,18 @@ p {
   }
 
   h2 {
-    font-size: 3rem;
+    font-size: 5rem;
     line-height: 3rem;
   }
 
   h3 {
     font-size: 1.75rem;
+    line-height: 2rem;
+    font-weight: 100;
+  }
+
+  h4 {
+    font-size: 1.5rem;
     line-height: 2rem;
     font-weight: 100;
   }
@@ -64,6 +77,7 @@ main {
 
 section {
   padding: 4rem 0 2rem;
+  min-height: 100vh;
 }
 
 button {
@@ -95,6 +109,7 @@ header {
   align-items: center;
   padding: 1rem 2rem;
   position: fixed;
+  background-color: theme('colors.mainBlue');
 }
 
 nav {
@@ -196,10 +211,8 @@ ul.specs>li:nth-child(4) {
   align-items: center;
   position: absolute;
   right: -100px;
-  
+
 }
-
-
 
 @media screen and (min-width: 968px) {
   .specs-img {
@@ -211,10 +224,89 @@ ul.specs>li:nth-child(4) {
     right: 0;
     top: -1rem;
   }
+
   .specs-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
+  }
+}
+
+/*========== ACCESSORIES ==========*/
+
+.access-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 4rem;
+  background-color: theme('colors.light');
+  border-radius: 2rem;
+}
+
+.access-nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+@media screen and (min-width: 968px) {
+  .access-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: center;
+
+  }
+
+  .access-nav {
+    justify-content: flex-start;
+  }
+}
+
+/*========== RECIPES ==========*/
+.recipes-intro {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 0;
+}
+
+.recipes-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.recipe-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.recipe-img {
+  position: absolute;
+
+}
+
+.recipe-info {
+  background-color: theme('colors.light');
+  padding: 6rem 2rem 2rem 2rem;
+  margin-top: 4.5rem;
+}
+
+@media screen and (min-width: 968px) {
+  .recipes-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .recipes-intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
   }
 }

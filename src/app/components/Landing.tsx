@@ -9,7 +9,7 @@ export default function Landing() {
 			</div>
 			<div className="mt-4">
 				<h1 className="absolute opacity-20">Blue Salt</h1>
-				<h2 className="pt-[4rem] md:pt-[5rem] mb-16">KitchenAid 2024</h2>
+				<h2 className="font-dmsans font-[600] text-[2.5rem] md:text-[3rem] pt-[4rem] md:pt-[5rem] mb-16">KitchenAid 2024</h2>
 				<h3 className="mb-4">Découvrez notre fabuleux robot pâtissier</h3>
 				<p className="mb-12">Fouetter, batter, remuer, pétrir ou écrasier: ce superbe robot pâtissier Artisan de 4,7L peut tout faire. Avec son mouvement planétaire unique et son design emblématique, il incarne parfaitement la marque de robots pâtissiers nº1 dans le monde.</p>
 				<button>Découvrir</button>
