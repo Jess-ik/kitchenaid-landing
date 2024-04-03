@@ -1,10 +1,13 @@
+'use client'
+import { RevealWrapper } from "next-reveal";
 import Image from "next/image";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 
 export default function Accessories() {
 	return (
-		<section className="" id="accessories">
-			<h2 className="text-center">Accessoires</h2>
+        <section className="" id="accessories">
+            <RevealWrapper origin="bottom" duration={2500}  distance="60px">
+			<h2 className="text-center">Accessoires</h2></RevealWrapper>
 			<div className="access-container mt-16 ">
 				<div className="access-carousel">
 					<Image src={"/Kitchenaid_34.png"} alt="Kitchenaid Blue Salt de 3/4" width={300} height={300} />

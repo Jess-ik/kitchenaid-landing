@@ -1,11 +1,14 @@
+'use client'
+import { RevealWrapper } from "next-reveal";
 import Image from "next/image";
 import React from "react";
 import { TbBounceRight, TbBrandReact, TbShieldHeart, TbEngine } from "react-icons/tb";
 
 export default function Specs() {
 	return (
-		<section className="" id="specs">
-			<h2 className="text-center">Caractéristiques</h2>
+        <section className="" id="specs">
+            <RevealWrapper origin="bottom" duration={2500}  distance="60px">
+			<h2 className="text-center">Caractéristiques</h2></RevealWrapper>
 			<div className="flex md:gap-6 md:px-40 justify-center items-center    mt-16 ">
 				<div className="specs-container w-full">
 					<ul className="specs">
