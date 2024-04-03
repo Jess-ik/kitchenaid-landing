@@ -18,13 +18,13 @@ export default function Recipes() {
 
 			<div className="recipes-container">
 				<RevealWrapper origin="top" duration={2500} distance="60px" delay={100}>
-					<RecipeCard recipeTitle="Cinamon Roll" recipeImage={"/Recipe.png"} recipeDescription="Viennoiserie" />
+					<RecipeCard recipeTitle="Muffins" recipeImage={"/muffin.jpg"} recipeDescription="Gâteau" />
 				</RevealWrapper>
 				<RevealWrapper origin="top" duration={2500} distance="60px" delay={200}>
-					<RecipeCard recipeTitle="Chouquettes" recipeImage={"/Recipe.png"} recipeDescription="Viennoiserie" />
+					<RecipeCard recipeTitle="Chouquettes" recipeImage={"/chouquettes.jpg"} recipeDescription="Viennoiserie" />
 				</RevealWrapper>
 				<RevealWrapper origin="top" duration={2500} distance="60px" delay={300}>
-					<RecipeCard recipeTitle="Brioche feuilletée" recipeImage={"/Recipe.png"} recipeDescription="Viennoiserie" />
+					<RecipeCard recipeTitle="Macarons" recipeImage={"/macarons.jpg"} recipeDescription="Biscuits" />
 				</RevealWrapper>
 			</div>
 			<button className="mt-12 w-fit !bg-transparent hover:!bg-dark hover:!text-light cursor-pointer border border-darkBlue text-darkBlue">Découvrir toutes les recettes</button>

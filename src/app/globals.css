@@ -296,6 +296,12 @@ ul.specs  li.spec:nth-child(4) {
   position: absolute;
 
 }
+.recipe-img img{
+  width: 150px;
+  height: 150px;
+  border-radius: 150px;
+  object-fit: cover;
+}
 
 .recipe-info {
   background-color: theme('colors.light');

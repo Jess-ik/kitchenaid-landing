@@ -11,7 +11,8 @@ export default function Header() {
 	const activeSection = ActiveSection({sectionIDs})
 	return (
 		<header>
-			<div className="logo">KitchenAid</div>
+						<div className="logo"><a href="#home">KitchenAid</a></div>
+
 			<nav className={`${open ? "top-0 " : ""}`}>
 				<ul>
 					<li>
