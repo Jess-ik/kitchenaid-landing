@@ -31,7 +31,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <body className={`${licorice.variable} ${DMSerif.variable} ${DMSans.variable}`}>{children}</body>
     </html>
   );

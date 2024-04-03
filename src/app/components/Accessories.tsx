@@ -3,7 +3,7 @@ import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 
 export default function Accessories() {
 	return (
-		<section className="flex flex-col justify-center border" id="accessories">
+		<section className="" id="accessories">
 			<h2 className="text-center">Accessoires</h2>
 			<div className="access-container mt-16 ">
 				<div className="access-carousel">

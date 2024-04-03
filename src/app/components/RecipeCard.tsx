@@ -11,7 +11,7 @@ export default function RecipeCard(props: { recipeImage: string | StaticImport; 
 			<div className="recipe-info text-center">
                 <h4>{props.recipeTitle}</h4>
 				<p className="mb-6">{props.recipeDescription}</p>
-				<button>Au fourneaux</button>
+				<button className="!text-light">Au fourneaux</button>
 			</div>
 		</div>
 	);

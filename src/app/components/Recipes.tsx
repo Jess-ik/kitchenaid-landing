@@ -3,7 +3,7 @@ import RecipeCard from "./RecipeCard";
 
 export default function Recipes() {
 	return (
-		<section className="flex flex-col justify-center items-center pt-32" id="recipes">
+		<section className="pt-32" id="recipes">
 			<h2 className="text-center">En cuisine</h2>
 			<div className="recipes-intro">
 				<h3 className="mb-6">Des recettes pour vous inspirer</h3>
@@ -15,7 +15,7 @@ export default function Recipes() {
 				<RecipeCard recipeTitle="Chouquettes" recipeImage={"/Recipe.png"} recipeDescription="Viennoiserie" />
 				<RecipeCard recipeTitle="Brioche feuilletée" recipeImage={"/Recipe.png"} recipeDescription="Viennoiserie" />
 			</div>
-			<button className="mt-12 w-fit !bg-transparent border border-darkBlue text-darkBlue">Découvrir toutes les recettes</button>
+			<button className="mt-12 w-fit !bg-transparent hover:!bg-dark hover:!text-light cursor-pointer border border-darkBlue text-darkBlue">Découvrir toutes les recettes</button>
 		</section>
 	);
 }

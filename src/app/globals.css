@@ -78,6 +78,10 @@ main {
 section {
   padding: 4rem 0 2rem;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 button {
@@ -110,6 +114,8 @@ header {
   padding: 1rem 2rem;
   position: fixed;
   background-color: theme('colors.mainBlue');
+  font-family: var(--font-dmserif);
+  z-index: 1000;
 }
 
 nav {
@@ -133,13 +139,13 @@ nav ul {
 nav li {
   font-size: 1.25rem;
   text-transform: uppercase;
-  font-weight: 600;
+
 }
 
 .menu-toggle,
 .logo {
   cursor: pointer;
-  z-index: 1000;
+
 }
 
 @media screen and (min-width: 968px) {

@@ -4,7 +4,7 @@ import { TbBounceRight, TbBrandReact, TbShieldHeart, TbEngine } from "react-icon
 
 export default function Specs() {
 	return (
-		<section className="flex flex-col justify-center" id="specs">
+		<section className="" id="specs">
 			<h2 className="text-center">Caractéristiques</h2>
 			<div className="flex md:gap-6 md:px-40 justify-center items-center    mt-16 ">
 				<div className="specs-container w-full">
