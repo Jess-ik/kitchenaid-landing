@@ -202,12 +202,12 @@ nav li {
   font-size: .9rem;
 }
 
-ul.specs>li {
+ul.specs li.spec {
   margin-bottom: 2rem;
 }
 
-ul.specs>li:nth-child(1),
-ul.specs>li:nth-child(4) {
+ul.specs  li.spec:nth-child(1),
+ul.specs  li.spec:nth-child(4) {
   margin-left: 2rem;
 }
 
