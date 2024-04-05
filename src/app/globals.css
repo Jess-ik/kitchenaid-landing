@@ -14,11 +14,12 @@ h1 {
 }
 
 h2 {
-  font-family: var(--font-licorice);
-
-  font-size: 4rem;
+  font-family: var(--font-dmsans);
+  font-weight: 600;
+  font-size: 2.5rem;
   line-height: 2.5rem;
   color: theme('colors.dark');
+  letter-spacing: -0.1rem;
 }
 
 h3 {
@@ -114,8 +115,9 @@ header {
   padding: 1rem 2rem;
   position: fixed;
   background-color: theme('colors.mainBlue');
-  font-family: var(--font-dmserif);
-  z-index: 1000;
+  font-family: var(--font-dmsans);
+  font-weight: 600;
+  z-index: 900;
 }
 
 nav {
@@ -139,19 +141,19 @@ nav ul {
 nav li {
   font-size: 1.25rem;
   text-transform: uppercase;
-
 }
 
 .menu-toggle,
 .logo {
   cursor: pointer;
-
+  z-index: 1000;
 }
 
 @media screen and (min-width: 968px) {
   header {
     background-color: theme('colors.mainBlue');
     padding: 1rem 8rem;
+    z-index: 1000;
   }
 
   nav {
@@ -170,7 +172,7 @@ nav li {
   nav li {
     font-size: 1rem;
     text-transform: capitalize;
-    font-weight: 400;
+    font-weight: 300;
     cursor: pointer;
     transition: .2s;
   }
@@ -206,8 +208,8 @@ ul.specs li.spec {
   margin-bottom: 2rem;
 }
 
-ul.specs  li.spec:nth-child(1),
-ul.specs  li.spec:nth-child(4) {
+ul.specs li.spec:nth-child(1),
+ul.specs li.spec:nth-child(4) {
   margin-left: 2rem;
 }
 
@@ -246,10 +248,53 @@ ul.specs  li.spec:nth-child(4) {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 4rem;
   padding: 4rem;
   background-color: theme('colors.light');
   border-radius: 2rem;
+
+
+}
+
+
+
+.access-image-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.access-image {
+  width: 300px;
+  height: 300px;
+}
+
+.access-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.dots-nav {
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .6rem;
+}
+
+.dot {
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  background-color: theme('colors.mainBlue');
+ 
+  transition: all 1s ease;
+}
+
+.current-dot {
+  background-color: theme('colors.darkBlue');
 }
 
 .access-nav {
@@ -259,16 +304,21 @@ ul.specs  li.spec:nth-child(4) {
   margin-top: 1rem;
 }
 
+
+
 @media screen and (min-width: 968px) {
   .access-container {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     align-items: center;
-
   }
 
   .access-nav {
     justify-content: flex-start;
+  }
+
+  .dots-nav{
+    margin-top: 1rem;
   }
 }
 
@@ -296,7 +346,8 @@ ul.specs  li.spec:nth-child(4) {
   position: absolute;
 
 }
-.recipe-img img{
+
+.recipe-img img {
   width: 150px;
   height: 150px;
   border-radius: 150px;

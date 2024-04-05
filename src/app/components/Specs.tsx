@@ -10,7 +10,7 @@ export default function Specs() {
 			<RevealWrapper origin="bottom" duration={2500} distance="60px">
 				<h2 className="text-center">Caractéristiques</h2>
 			</RevealWrapper>
-			<div className="flex md:gap-6 md:px-40 justify-center items-center w-full  mt-16 ">
+			<div className="flex md:gap-6 md:px-40 justify-center items-center w-full  mt-32 ">
 				<div className="specs-container w-full">
 					<ul className="specs">
 						<RevealList origin="left" delay={500} duration={2500} distance="60px" interval={100}>

@@ -1,0 +1,60 @@
+[
+	{
+		"id": "01",
+		"title": "Bol en acier inoxydable de 4,7L",
+		"img": "/access01.png",
+		"description": "Bol en acier inoxydable poli avec poignée ergonomique. Solide, stable et durable. Passe au lave-vaisselle."
+	},
+
+	{
+		"id": "02",
+		"title": "Bol en acier inoxydable de 2,8L",
+		"img": "/access02.png",
+		"description": "Le bol mélangeur supplémentaire vous permet de continuer à créer, sans interruption pour faire la vaisselle. Il est fabriqué en acier inoxydable poli et passe au lave-vaisselle."
+	},
+
+	{
+		"id": "03",
+		"title": "Verseur/protecteur",
+		"img": "/access03.png",
+		"description": "Cet accessoire monobloc empêche les éclaboussures dans toute la cuisine ! Le bec verseur bien conçu permet d’ajouter les ingrédients en douceur pendant le mélange."
+	},
+
+	{
+		"id": "04",
+		"title": "Fouet à fils",
+		"img": "/access04.png",
+		"description": "Le fouet de forme elliptique permet de couvrir une plus grande surface du bol. Il permet de fouetter de petites ou de grandes quantités d’ingrédients en y incorporant de l’air. Fils en acier inoxydable et tête en aluminium. Ne passe pas au lave-vaisselle."
+	},
+
+	{
+		"id": "05",
+		"title": "Crochet pétrisseur argenté",
+		"img": "/access05.png",
+		"description": "Le crochet pétrisseur est conçu pour mélanger et pétrir différents types de pâtes, notamment la pâte à pain, à pizza ou pour pâtes fraîches."
+	},
+
+	{
+		"id": "06",
+		"title": "Batteur à pâtisserie argenté",
+		"img": "/access06.png",
+		"description": "Écrase facilement le beurre pour obtenir des pâtisseries légères et homogènes, ce qui vous permet de le couper sans avoir à le faire fondre. Permet également de réduire en purée et de broyer."
+	},
+
+	{
+		"id": "07",
+		"title": "Batteur à bord flexible argenté",
+		"img": "/access07.png",
+		"description": "Conçu pour permettre un mélange plus rapide, sans qu’il soit nécessaire de s’arrêter pour racler les bords. Revêtement en métal avec un côté flexible en silicone."
+	},
+
+	{
+		"id": "08",
+		"title": "Spatule",
+		"img": "/access08.png",
+		"description": "Outil pratique pour nettoyer facilement le batteur à pâtisserie ou pour racler le bol."
+	}
+
+	
+
+]

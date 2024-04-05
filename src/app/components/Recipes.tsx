@@ -12,7 +12,7 @@ export default function Recipes() {
 			<RevealWrapper origin="bottom" duration={2500} distance="60px" delay={500}>
 				<div className="recipes-intro">
 					<h3 className="mb-6">Des recettes pour vous inspirer</h3>
-					<p className="md:text-center">Explorez notre sélection de délicieuses créations culinaires, des classiques revisités aux créations originales, toutes élaborées avec soin pour tirer le meilleur parti de votre robot pâtissier. Que vous soyez un passionné de pâtisserie expérimenté ou un novice enthousiaste, ces recettes sauront éveiller votre créativité et émerveiller vos papilles. Préparez-vous à découvrir de nouvelles saveurs et à épater vos proches avec des desserts dignes d'un chef !</p>
+					<p className="md:text-center">Explorez notre sélection de recettes délicieuses, des classiques revisités aux créations originales, toutes conçues pour ravir vos papilles. Que vous soyez un passionné de pâtisserie expérimenté ou un novice enthousiaste, ces créations éveilleront votre créativité et impressionneront vos proches avec des desserts dignes d&apos;un chef !</p>
 				</div>
 			</RevealWrapper>
 
