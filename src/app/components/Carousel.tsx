@@ -43,10 +43,10 @@ export default function Carousel({ accessoriesData }) {
 							<h4>{accessorie.title}</h4>
 							<p>{accessorie.description}</p>
 							<div className="access-nav">
-								<button className="px-4" onClick={goToPrevious}>
+								<button className="px-4" onClick={goToPrevious} aria-label="Previous accessorie">
 									<FiChevronLeft />
 								</button>
-								<button className="px-4" onClick={goToNext}>
+								<button className="px-4" onClick={goToNext} aria-label="Next accessorie">
 									<FiChevronRight />
 								</button>
 							</div>

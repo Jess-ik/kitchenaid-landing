@@ -27,7 +27,7 @@ export default function Recipes() {
 					<RecipeCard recipeTitle="Macarons" recipeImage={"/macarons.jpg"} recipeDescription="Biscuits" />
 				</RevealWrapper>
 			</div>
-			<button className="mt-12 w-fit !bg-transparent hover:!bg-dark hover:!text-light cursor-pointer border border-darkBlue text-darkBlue">Découvrir toutes les recettes</button>
+			<button className="mt-12 w-fit !bg-transparent hover:!bg-dark hover:!text-light cursor-pointer border border-darkBlue text-darkBlue" aria-label="View all recipes">Découvrir toutes les recettes</button>
 		</section>
 	);
 }

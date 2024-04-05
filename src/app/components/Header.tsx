@@ -16,16 +16,16 @@ export default function Header() {
 			<nav className={`${open ? "top-0 " : ""}`}>
 				<ul>
 					<li>
-						<a href="#home" className={activeSection === 'home' ? 'text-light' : ""}>Accueil</a>
+						<a href="#home" className={activeSection === 'home' ? 'active-nav' : ""}>Accueil</a>
 					</li>
 					<li>
-						<a href="#specs" className={activeSection === 'specs' ? 'text-light' : ""}>Caractéristiques</a>
+						<a href="#specs" className={activeSection === 'specs' ? 'active-nav' : ""}>Caractéristiques</a>
 					</li>
 					<li>
-						<a href="#accessories" className={activeSection === 'accessories' ? 'text-light' : ""}>Accessoires</a>
+						<a href="#accessories" className={activeSection === 'accessories' ? 'active-nav' : ""}>Accessoires</a>
 					</li>
 					<li>
-						<a href="#recipes" className={activeSection === 'recipes' ? 'text-light' : ""}>Recettes</a>
+						<a href="#recipes" className={activeSection === 'recipes' ? 'active-nav' : ""}>Recettes</a>
 					</li>
 				</ul>
 			</nav>

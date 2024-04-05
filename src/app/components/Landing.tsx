@@ -8,7 +8,7 @@ export default function Landing() {
 		<section className="pt-32 block md:grid md:grid-cols-2 gap-4" id="home">
 			<div className="flex justify-center items-center">
 				<RevealWrapper origin="top" duration={2500} delay={700} distance="60px">
-					<Image src={"/Kitchenaid_face.png"} alt="Kitchenaid Blue Salt de face" width={450} height={450} />
+					<Image src={"/Kitchenaid_face.png"} alt="Kitchenaid Blue Salt de face" width={450} height={450} loading="eager"/>
 				</RevealWrapper>{" "}
 			</div>
 
@@ -22,7 +22,7 @@ export default function Landing() {
 					<p className="mb-12">Fouetter, batter, remuer, pétrir ou écrasier: ce superbe robot pâtissier Artisan de 4,7L peut tout faire. Avec son mouvement planétaire unique et son design emblématique, il incarne parfaitement la marque de robots pâtissiers nº1 dans le monde.</p>
 
 					<a href="/#specs">
-						<button>Découvrir</button>
+						<button aria-label="Discover">Découvrir</button>
 					</a>
 				</RevealWrapper>
 			</div>
